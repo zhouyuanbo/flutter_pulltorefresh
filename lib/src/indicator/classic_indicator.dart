@@ -75,7 +75,8 @@ class _ClassicIndicatorState extends State<ClassicIndicator> {
                         : widget.mode == RefreshStatus.noMore
                             ? widget.noDataText
                             : widget.idleText,
-        style: widget.textStyle);
+        style: widget.textStyle,
+        textScaleFactor: 1.0,);
   }
 
   Widget _buildIcon() {
